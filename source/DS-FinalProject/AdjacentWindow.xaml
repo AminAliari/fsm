@@ -1,0 +1,27 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"       
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DS_FinalProject"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="DS_FinalProject.AdjacentWindow"
+        mc:Ignorable="d"
+        Title="Adjacent Table" Height="327" Width="327"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto"        
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}" WindowStartupLocation="CenterScreen" Icon="Resources/icon.ico" ResizeMode="NoResize">
+
+    <Grid Margin="0" Focusable="True" FocusManager.FocusedElement="{Binding ElementName=commendTb}">
+        <Grid Margin="20">
+            <materialDesign:Card VerticalAlignment="Stretch"/>
+            <DataGrid Name="dataGrid" Margin="10" GridLinesVisibility="All" HorizontalGridLinesBrush="#FF673AB7" VerticalGridLinesBrush="#FF673AB7" SelectionUnit="Cell" HeadersVisibility="None" SelectionMode="Single"
+                      CanUserResizeColumns="false" CanUserSortColumns="false" CanUserAddRows="false" CanUserDeleteRows="false" CanUserReorderColumns="false" CanUserResizeRows="false" RowHeaderWidth="0" ColumnHeaderHeight="50" RowHeight="56" FrozenColumnCount="1" ColumnWidth="261"/>
+        </Grid>
+    </Grid>
+</Window>
+    
